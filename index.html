@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise2</title>
+
+    <style>
+        body{
+            font-family: calibri, helvetica,sans-serif;
+            background-color: blueviolet;
+        }
+        form{
+            border:3px solid #f1f1f1;
+
+        }
+        input[type=text],input[type=password]{
+            width: 50%;
+            margin: 8px 0;
+            padding: 12px 15px;
+            display: inline-block;
+            border: 2px solid green;
+            box-sizing: border-box;
+            position: relative;
+        }
+        input[type=radio]{
+            display: inline-block;
+        }
+        .container{
+            padding: 25px;
+            background-color: green;
+        }
+        button{
+            background-color: #4CAF50;
+            width: auto;
+            color: orange;
+            padding: 10px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            border-radius: 4px;
+        }
+        button:hover{
+            opacity: 0.7;
+            background-color: red;
+            color: white;
+        }
+        break-point::before{
+            content: "hiddentext";
+            font-size: 0;
+            display: block;
+            line-height: 0;
+        }
+        break-point::after{
+            content: "hiddentext";
+            font-size: 0;
+            display: block;
+            line-height: 0;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <CENTER>
+        <form action="insert.php" method="post">
+            <h1>STORING DATA IN A DATABASE</h1>
+            <p>
+        
+            Firstname:<input type="text" name="first_name" id="first_name" required>
+    
+            </p>
+    
+            <p>
+            Lastname:<input type="text" name="last_name" id="last_name" required>
+            </p>
+            <p>
+    
+            Address:<input type="text" name="address" id="address" required>
+            </p>
+            <p>
+            Gender:
+            <input type="radio" name="gender" value="female">female
+            <input type="radio" name="gender" value="male">Male
+            </p>
+            
+            
+            <p>
+    
+            <button type="submit">submit</button>
+            <button type="reset">cancel</button>
+            </p>
+            </form>
+    </CENTER>
+    
+</body>
+</html>
